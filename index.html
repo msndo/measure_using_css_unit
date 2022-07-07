@@ -18,7 +18,7 @@
 .rowOfGrid { counter-reset: section -1; display: flex; width: auto; align-items: center; justify-content: left; height: 1cm; }
 .rowTop { align-items: flex-start; }
 .rowBottom { align-items: flex-end; }
-.mark {  position: relative; width: 1px; height: 50%; margin-left: calc(1mm); background: #666; }
+.mark {  position: relative; width: 1px; height: 50%; margin-left: calc(1mm + .25px); background: #666; }
 .mark.markForUnitBy5 { height: 80%; }
 .mark.markForUnitBy10 { height: 100%; counter-increment: section; background: #000; }
 .mark.markForUnitBy10::after { content: counter(section); position: absolute; left: 0; bottom: -1.5em; transform: translateX(-50%); }
@@ -748,17 +748,6 @@
 <div class="mark markForUnitBy1"></div>
 <div class="mark markForUnitBy10"></div>
 
-<div class="mark markForUnitBy1"></div>
-<div class="mark markForUnitBy1"></div>
-<div class="mark markForUnitBy1"></div>
-<div class="mark markForUnitBy1"></div>
-<div class="mark markForUnitBy5"></div>
-
-<div class="mark markForUnitBy1"></div>
-<div class="mark markForUnitBy1"></div>
-<div class="mark markForUnitBy1"></div>
-<div class="mark markForUnitBy1"></div>
-<div class="mark markForUnitBy10"></div>
 </div><!-- /rowOfGrid -->
 </div>
 
